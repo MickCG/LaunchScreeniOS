@@ -77,7 +77,6 @@
     <ImageAsset Include="Assets.xcassets\Launch.imageset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
@@ -136,8 +135,14 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\LaunchScreeniOS\LaunchScreeniOS.csproj">
-      <Project>{873A185D-0159-4F8B-ACFA-D9D4367C7CEE}</Project>
+      <Project>{009DFFFF-9361-4B85-A720-62A7F5EC6A00}</Project>
       <Name>LaunchScreeniOS</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
 </Project>
